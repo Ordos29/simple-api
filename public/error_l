@@ -1,0 +1,10 @@
+[31-Jan-2020 11:47:10 Asia/Riyadh] PHP Fatal error:  Uncaught Symfony\Component\Dotenv\Exception\FormatException: Missing = in the environment variable declaration in "/var/www/simple-api/.env" at line 14.
+...OST=redis\nREDIS_PORT)=6379\nREDIS_DB=0\n...
+                       ^ line 14 offset 223 in /var/www/simple-api/vendor/symfony/dotenv/Dotenv.php:498
+Stack trace:
+#0 /var/www/simple-api/vendor/symfony/dotenv/Dotenv.php(235): Symfony\Component\Dotenv\Dotenv->createFormatException('Missing = in th...')
+#1 /var/www/simple-api/vendor/symfony/dotenv/Dotenv.php(190): Symfony\Component\Dotenv\Dotenv->lexVarname()
+#2 /var/www/simple-api/vendor/symfony/dotenv/Dotenv.php(508): Symfony\Component\Dotenv\Dotenv->parse('# framework\nAPP...', '/var/www/simple...')
+#3 /var/www/simple-api/vendor/symfony/dotenv/Dotenv.php(60): Symfony\Component\Dotenv\Dotenv->doLoad(false, Array)
+#4 /var/www/simple-api/vendor/symfony/dotenv/Dotenv.php(80): Symfony\Component\Dotenv\Dotenv->load('/var/www/simple...')
+#5 /var/www/simple-api/config/bootstrap.php(17): Symfony\Component\Dotenv\Dot in /var/www/simple-api/vendor/symfony/dotenv/Dotenv.php on line 498
